@@ -85,7 +85,9 @@ def organize_schools(array)
     if !sorted_hash[site]
       sorted_hash[site] = []
     end
-
+    if !sorted_hash[site].include?(item)
+      sorted_hash[site] << item
+    end
   end
   puts sorted_hash
 end
