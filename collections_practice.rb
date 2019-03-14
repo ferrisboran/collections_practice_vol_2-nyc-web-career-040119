@@ -81,7 +81,5 @@ def organize_schools(array)
   array.each do |item, value|
     #puts item = {"Hack Reactor"=>{:location=>"SF"}, "dev boot camp"=>{:location=>"SF"}, "dev boot camp chicago"=>{:lo...:location=>"NYC"}, "flatiron school bk"=>{:location=...
     puts value
-    item.each do |att|
-    end
   end
 end
