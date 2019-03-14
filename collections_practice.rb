@@ -80,8 +80,8 @@ def organize_schools(array)
   sorted_arr = []
   array.each do |item|
     #puts item = {"Hack Reactor"=>{:location=>"SF"}, "dev boot camp"=>{:location=>"SF"}, "dev boot camp chicago"=>{:lo...:location=>"NYC"}, "flatiron school bk"=>{:location=...
-    item.each do |att|
-      puts att
+    item.each do |att, value|
+      puts att[value]
     end
   end
 end
