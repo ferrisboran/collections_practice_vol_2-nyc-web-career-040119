@@ -81,7 +81,7 @@ def organize_schools(array)
   array.each do |item, value|
     #puts item = {"Hack Reactor"=>{:location=>"SF"}, "dev boot camp"=>{:location=>"SF"}, "dev boot camp chicago"=>{:lo...:location=>"NYC"}, "flatiron school bk"=>{:location=...
     #value = locations
-    site = value[:loaction]
+    puts value[:loaction]
     if !sorted_hash[site]
       sorted_hash[site] = []
     end
@@ -89,5 +89,5 @@ def organize_schools(array)
       sorted_hash[site] << item
     end
   end
-  puts sorted_hash
+  #puts sorted_hash
 end
