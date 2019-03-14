@@ -89,5 +89,5 @@ def organize_schools(array)
       sorted_hash[site] << item
     end
   end
-  puts sorted_hash
+  sorted_hash
 end
