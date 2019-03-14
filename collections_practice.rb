@@ -77,9 +77,15 @@ def find_cool(array)
 end
 
 def organize_schools(array)
-  sorted_arr = []
+  sorted_hash = {}
   array.each do |item, value|
     #puts item = {"Hack Reactor"=>{:location=>"SF"}, "dev boot camp"=>{:location=>"SF"}, "dev boot camp chicago"=>{:lo...:location=>"NYC"}, "flatiron school bk"=>{:location=...
-    puts value
+    #value = locations
+    location = value[:loaction]
+    if !sorted_hash[location]
+      sorted_hash[location] = []
+    end
+
   end
+  puts sorted_hash
 end
